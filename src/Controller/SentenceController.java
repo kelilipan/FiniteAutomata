@@ -14,6 +14,7 @@ import java.util.List;
  *
  * @author Anvaqta Tangguh Wisesa <me@anvaqta.id>
  */
+//THX TO @firdiar btw
 public class SentenceController {
     
     public SentenceController(String Sentence){
