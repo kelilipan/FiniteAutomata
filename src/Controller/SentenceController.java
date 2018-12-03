@@ -18,7 +18,8 @@ import java.util.List;
 public class SentenceController {
     
     public SentenceController(String Sentence){
-        Sentence = new InputView().readString();
+        InputView view= new InputView();
+        Sentence = view.readString();
         List<String> token = tokenize(Sentence);
         System.out.print("your sentence is : "+new PDAController(token).isAccepted()+"\n");
     }

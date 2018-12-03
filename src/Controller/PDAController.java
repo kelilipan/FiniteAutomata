@@ -24,7 +24,7 @@ public class PDAController {
     StatePDA q3;
     FAController fa = new FAController();
     StatePDA current;
-    
+
     public PDAController(List<String> token) {
         stack = new Stack<>();
         init = new StatePDA("IS");
