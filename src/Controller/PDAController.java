@@ -53,7 +53,9 @@ public class PDAController {
         int i = 0;
         while (current != null && i < token.size()) {
             current = current.getNext(stack, tokenRecognizer(token.get(i)), stack.pop());
+            System.out.println(tokenRecognizer(token.get(i)));
             i++;
+            
         }
 
         while (current != null && !stack.isEmpty()) {
@@ -61,21 +63,22 @@ public class PDAController {
         }
     }
 
+    
     public boolean isAccepted() {
         return (current != null ? current.isFinal() : false);
     }
 
     public Character tokenRecognizer(String token) {
         if (isAccepted(token, fa.S)) {
-            return 's';
+            return 'S';
         } else if (isAccepted(token, fa.K)) {
-            return 'k';
+            return 'K';
         } else if (isAccepted(token, fa.O)) {
-            return 'o';
+            return 'O';
         } else if (isAccepted(token, fa.P)) {
-            return 'p';
+            return 'P';
         }
-        return 'e';
+        return 'X';
     }
 
     public boolean isAccepted(String kata, StateFA initialState) {

@@ -22,6 +22,8 @@ public class SentenceController {
         Sentence = view.readString();
         List<String> token = tokenize(Sentence);
         System.out.print("your sentence is : "+new PDAController(token).isAccepted()+"\n");
+        
+        
     }
 
     public List<String> tokenize(String sentence) {
