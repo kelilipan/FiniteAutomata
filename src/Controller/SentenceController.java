@@ -4,8 +4,6 @@
  */
 package Controller;
 
-import Model.StateFA;
-import Model.StatePDA;
 import View.InputView;
 import java.util.ArrayList;
 import java.util.List;

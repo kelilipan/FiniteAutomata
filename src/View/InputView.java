@@ -35,7 +35,8 @@ public class InputView {
         System.out.println("        // SUBJECT    : salsa, saya, dia, aku, kamu\n"
                 + "        // PREDIKAT   : baca, beli, makan, minum, nulis\n"
                 + "        // OBJECT     : buku, tahu, susu, busa, tisu\n"
-                + "        // KETERANGAN : di kos , di kamar , di kota , di kantin , di kafe");
+                + "        // KETERANGAN : di kos , di kamar , di kota , di kantin , di kafe\n"
+                + "        ACCEPTED STRUCTURE : S-P-O-K, S-P-O , S-P");
         System.out.println("USAGE : [SUBJECT][PREDIKAT][OBJECT][KETERANGAN] \n");
 
     }
