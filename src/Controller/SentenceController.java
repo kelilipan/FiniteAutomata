@@ -16,14 +16,16 @@ import java.util.List;
  */
 //THX TO @firdiar btw
 public class SentenceController {
-    
-    public SentenceController(String Sentence){
-        InputView view= new InputView();
+
+    public SentenceController(String Sentence) {
+        InputView view = new InputView();
         Sentence = view.readString();
         List<String> token = tokenize(Sentence);
-        System.out.print("your sentence is : "+new PDAController(token).isAccepted()+"\n");
-        
-        
+        PDAController PDA = new PDAController(token);
+        for (int i = 0; i < token.size(); i++) {
+            System.out.print(PDA.tokenRecognizer(token.get(i))+" ");
+        }
+        System.out.print("\nyour sentence is : " + PDA.isAccepted()+ "\n");
     }
 
     public List<String> tokenize(String sentence) {
