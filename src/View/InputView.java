@@ -32,11 +32,11 @@ public class InputView {
 
     public void showHelp() {
         System.out.println("This program only read this combination");
-        System.out.println("        // SUBJECT    : salsa, saya, dia, aku, kamu\n"
+        System.out.println("        // SUBJECT    : salsa, saya, dia, aku, kita\n"
                 + "        // PREDIKAT   : baca, beli, makan, minum, nulis\n"
                 + "        // OBJECT     : buku, tahu, susu, busa, tisu\n"
                 + "        // KETERANGAN : di kos , di kamar , di kota , di kantin , di kafe\n"
-                + "        ACCEPTED STRUCTURE : S-P-O-K, S-P-O , S-P");
+                + "        ACCEPTED STRUCTURE : S-P-O-K, S-P-O , S-P-K , S-P");
         System.out.println("USAGE : [SUBJECT][PREDIKAT][OBJECT][KETERANGAN] \n");
 
     }

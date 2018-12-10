@@ -17,7 +17,7 @@ public class FiniteAutomata {
      */
     public static void main(String[] args) {
         String Sentence = null;
-        // SUBJECT    : salsa, saya, dia, aku, kamu
+        // SUBJECT    : salsa, saya, dia, aku, kita
         // PREDIKAT   : baca, beli, makan, minum, nulis
         // OBJECT     : buku, tahu, susu, busa, tisu
         // KETERANGAN : di kos , di kamar , di kota , di kantin , di kafe

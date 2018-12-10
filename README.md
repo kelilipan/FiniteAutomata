@@ -32,3 +32,5 @@ a Push Down Automata to validate sentence structure
  - Run program
  - Type "**help**" to see more information
 
+## Lincense
+Licensed under The MIT License.
